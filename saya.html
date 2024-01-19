@@ -52,6 +52,22 @@ nav .logo {
     height: auto;
     margin-right: 10px;
 }
+.ribbon {
+            position: absolute;
+            top: 10px;
+            right: -10px;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 10px;
+            transform: rotate(45deg);
+            z-index: 1;
+            font-size: 12px;
+        }
+
+/* ... (style lainnya) */
+
+
+
 
         nav a {
             float: left;
@@ -68,6 +84,7 @@ nav .logo {
             background-color: #2c3e50;
             border-radius: 30px;
         }
+
         .cart-icon,
         .cart-icon:hover {
             background-color: #2c3e50;
@@ -140,34 +157,35 @@ nav .logo {
         .social-icons img {
             width: 30px; /* Sesuaikan dengan ukuran yang diinginkan */
         }
-        @media only screen and (max-width: 600px) {
-    header {
-        padding: 20px; /* Ubah padding untuk header di layar kecil */
-        line-height: 50px; /* Sesuaikan nilai sesuai kebutuhan Anda */
+    @media screen and (max-width: 768px) {
+                    .book {
+                        width: 90%;
+                    }
+                       nav {
+                padding-left: 10px;
+            }
+            .profile-image {
+        width: 90%; /* Ubah lebar gambar agar sesuai dengan lebar layar */
+        height: auto;
+        margin: 20px;
     }
+        
+            nav .logo {
+                margin-right: 5px;
+            }
+        
+            nav a {
+                padding: 10px 12px;
+            }
+                }
+        
+                @media screen and (max-width: 480px) {
+                    .book {
+                        width: 100%;
+                        margin: 10px 0;
+                    }
+                }
 
-    nav {
-        padding-left: 10px; /* Ubah padding kiri untuk navigasi di layar kecil */
-        height: auto; /* Sesuaikan nilai tinggi navbar sesuai kebutuhan Anda */
-    }
-
-    nav .logo {
-        margin-right: 0; /* Tidak perlu margin kanan pada logo di layar kecil */
-    }
-
-    nav a {
-        padding: 10px; /* Ubah padding untuk setiap tautan di layar kecil */
-    }
-
-    .profile-image {
-        width: 100%; /* Gambar profil mengisi lebar penuh di layar kecil */
-        margin: 10px 0; /* Sesuaikan margin sesuai kebutuhan Anda */
-    }
-    
-    .profile-info {
-        max-width: 100%; /* Maksimum lebar untuk konten di layar kecil */
-    }
-}
     </style>
 </head>
 <body>
@@ -178,10 +196,10 @@ nav .logo {
 
     <nav>
         <img src="./assets/images/cumanlogo.png" alt="Logo" class="logo">
-        <a href="./index.html" class="home">Beranda</a>
+        <a href="./index.html" class="home">Home</a>
         <a href="./naruto.html" class="home">Naruto</a>
-        <a href="./onepiece.html" class="home">One Piece</a>
-        <a href="./saya.html" class="home">MelDisen</a>
+        <a href="./onepiece.html" class="home">OP</a>
+        <a href="./saya.html" class="home">About</a>
         <!-- Tambahkan item navigasi lainnya sesuai kebutuhan -->
     </nav>
 
@@ -203,7 +221,7 @@ nav .logo {
         <div class="social-icons">
             <a href="https://web.facebook.com/dis.en.75641/" target="_blank"><img src="./assets/icon/fb.png" alt="Facebook"></a>
             <a href="https://x.com/CipicipiG20258?t=15XdnGTyfCO9U6LBl_Nhgw&s=08" target="_blank"><img src="./assets/icon/tw.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com/disenmbeo_/p" target="_blank"><img src="./assets/icon/ig.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/disenmbeo_" target="_blank"><img src="./assets/icon/ig.png" alt="Instagram"></a>
             <a href="https://github.com/Kaiden2002" target="_blank"><img src="./assets/icon/github.png" alt="GitHub"></a>
             <!-- Ganti path/to/... dengan path aktual menuju ikon Anda -->
         </div>
