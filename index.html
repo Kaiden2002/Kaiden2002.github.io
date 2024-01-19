@@ -40,42 +40,44 @@
             font-size: 18px;
             margin-bottom: 30px;
         }
-        nav {
-            background-color: #34495e;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 999;
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-            height: 80px;
-        }
+    nav {
+        background-color: #34495e;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        height: 80px;
+    }
 
-        nav .logo {
-            width: 50px;
-            height: auto;
-            margin-right: 10px;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: #ecf0f1;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            border-radius: 30px;
-        }
+    nav .logo {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
 
-        nav a:hover {
-            background-color: #2c3e50;
-            border-radius: 30px;
-        }
-        nav a.active {
-        background-color: #2c3e50; /* Atur warna latar belakang sesuai keinginan Anda */
+    nav a {
+        float: left;
+        display: block;
+        color: #ecf0f1;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border-radius: 30px;
+    }
+
+    nav a:hover {
+        background-color: #2c3e50;
+        border-radius: 30px;
+    }
+
+    nav a.active {
+        background-color: #2c3e50;
         border-radius: 30px;
     }
         .content {
@@ -153,18 +155,6 @@
             background-color: #c0392b;
         }
 
-        .ribbon {
-            position: absolute;
-            top: 10px;
-            right: -10px;
-            background-color: #e74c3c;
-            color: #fff;
-            padding: 10px 10px;
-            transform: rotate(45deg);
-            z-index: 1;
-            font-size: 12px;
-        }
-
         footer {
             background-color: #34495e;
             color: #ecf0f1;
@@ -206,14 +196,20 @@
                    nav {
         padding-left: 10px;
     }
+                        nav {
+            padding-left: 10px;
+            flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+            align-items: flex-start; /* Mengatur posisi elemen ke kiri */
+        }
 
-    nav .logo {
-        margin-right: 5px;
-    }
+        nav .logo {
+            margin-right: 5px;
+        }
 
-    nav a {
-        padding: 10px 12px;
-    }
+        nav a {
+            padding: 10px 12px;
+            margin: 5px 0;
+        }
                 
     }
 
@@ -255,7 +251,6 @@
 
     <div class="content">
         <section class="book">
-            <div class="ribbon"> Diskon 90%</div>
             <h2>NARUTO</h2>
             <img src="./assets/images/./nr.jpg" alt="Gambar Buku 1">
             <p>Naruto Uzumaki, seorang ninja yang hiperaktif, periang, dan ambisius yang ingin mewujudkan keinginannya untuk mendapatkan gelar "Hokage".</p>
@@ -263,7 +258,6 @@
             <button onclick="redirectToNaruto()">Beli Sekarang</button>
         </section>
         <section class="book">
-            <div class="ribbon"> Diskon 90%</div>
             <h2>ONE PIECE</h2>
             <img src="./assets/images/./op.jpg" alt="Gambar Buku 1">
             <p>Saat masih kecil, Monkey D. Luffy bersumpah untuk menjadi Raja Bajak Laut dan menemukan harta karun legendaris yang disebut "One Piece".</p>
